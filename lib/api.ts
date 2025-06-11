@@ -1,12 +1,12 @@
 import axios from "axios";
 import { redirect } from "next/navigation";
 
-export const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_BASE_URL
-// export const BASE_URL = "https://ytecommerceapi2025-production.up.railway.app"
+// export const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_BASE_URL
+export const BASE_URL = "https://ytecommerceapi2025-production.up.railway.app"
 
 export const api = axios.create({
-    baseURL: "http://127.0.0.1:8008",
-    // baseURL: BASE_URL,
+    // baseURL: "http://127.0.0.1:8008",
+  baseURL: BASE_URL,
 })
 
 
